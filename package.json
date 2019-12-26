@@ -1,8 +1,8 @@
 {
-  "name": "my-new-app",
-  "productName": "my-new-app",
+  "name": "castra",
+  "productName": "castra",
   "version": "1.0.0",
-  "description": "My Electron application description",
+  "description": "A dashboard to monitor and track my personal well-being. Powered by ElectronJS.",
   "main": ".webpack/main",
   "scripts": {
     "start": "nodemon -x \"electron-forge start\"",
