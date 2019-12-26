@@ -1,0 +1,13 @@
+@font-face {
+  font-family: "OverSpray";
+  src: url("./fonts/overspray.ttf") format("ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+
+body {
+  font-family: "OverSpray";
+  margin: auto;
+  max-width: 38rem;
+  padding: 2rem;
+}
