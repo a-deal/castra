@@ -1,10 +1,9 @@
 import { openDB } from 'idb'
 
-const EPITHET_STORE = 'epithets'
+import { STORE_NAME as EPITHET_STORE, IEpithetStore } from './epithets'
 
 // TODO Add Schema
-
-const dbPromise = openDB('castra', 1, {
+const db = openDB('castra', 1, {
   upgrade(db) {
     db.createObjectStore(EPITHET_STORE, {
       keyPath: 'id',
@@ -13,12 +12,6 @@ const dbPromise = openDB('castra', 1, {
   },
 })
 
-export const epithets = {
-  async add(...values) {
-    const db = await dbPromise
-    // TODO Add transaction check
-  },
-  async update(...newValues) {
-    const db = awaitdbPromise
-  },
-}
+const epithetStore = IEpithetStore({ db })
+
+export { epithetStore }
