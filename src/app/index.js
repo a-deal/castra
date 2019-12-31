@@ -1,5 +1,6 @@
 import React from 'react'
 
+import db from '../db'
 import GlobalStyles from '../styles/Global'
 
 const App = () => {
