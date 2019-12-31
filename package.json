@@ -5,7 +5,7 @@
   "description": "A dashboard to monitor and track my personal well-being. Powered by ElectronJS.",
   "main": ".webpack/main",
   "scripts": {
-    "start": "nodemon -x \"electron-forge start\"",
+    "start": "electron-forge start",
     "package": "electron-forge package",
     "make": "electron-forge make",
     "publish": "electron-forge publish",
@@ -83,7 +83,6 @@
     "css-loader": "^3.0.0",
     "electron": "7.1.7",
     "node-loader": "^0.6.0",
-    "nodemon": "^2.0.2",
     "prettier": "1.19.1",
     "style-loader": "^0.23.1",
     "stylelint": "^12.0.1"
